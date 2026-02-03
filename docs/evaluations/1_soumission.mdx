@@ -75,6 +75,14 @@ Décrivez ce que votre projet cherche concrètement à accomplir.
 - Hypothèse : le modèle numérique converge vers la solution théorique pour un pas suffisamment petit.
 - Limites prévues : le modèle n’inclut pas les effets de friction.
 
+:::warning
+
+C'est dans les étapes 1 et 2 que vous devez justifier l'aspect "intégration
+des acquis", notamment la deuxième discipline scientifique mobilisée. Un
+projet sans un deuxième domaine scientifique clair ne pourra pas être accepté.
+
+:::
+
 ---
 
 ### 3. Description de l’application envisagée
@@ -86,15 +94,11 @@ graphique ou d’un ensemble de scripts. Décrivez :
 - les étapes principales du traitement ;
 - les types de données manipulées.
 
-:::warning
 
-Il ne s’agit pas d'écrire du code, mais de montrer que le projet est bien pensé.
-
-:::
-
-Vous devez préciser également préciser les types d’**entrées** (données
-initiales, paramètres, fichiers, etc.) et de **sorties** (résultats, graphiques,
-indicateurs, etc.) prévues.
+Il ne s’agit pas d'écrire du code, mais de montrer que le projet est bien
+pensé. Vous devez préciser également les types d’**entrées** (données
+initiales, paramètres, fichiers, etc.) et de **sorties** (résultats,
+graphiques, indicateurs, etc.) prévues.
 
 **Exemples** :
 - Fonctionnement général : l’utilisateur saisit les paramètres physiques du modèle, lance la simulation, puis visualise les résultats sous forme de graphiques.
@@ -132,10 +136,13 @@ c’est-à-dire des conditions permettant de dire objectivement que le besoin es
 satisfait.
 
 **Exemples de critères de réussite** :
-- les résultats sont reproductibles,
-- les unités sont cohérentes,
-- les valeurs calculées respectent des bornes physiques,
-- les graphiques sont lisibles et correctement annotés,
+
+Si vous avez écrit « En tant qu'utilisateur, je veux visualiser les résultats
+sous forme de graphiques », un critère de réussite naturel serait : 
+
+> les graphiques sont sauvegardés au format PNG dans un sous-dossier
+> `graphiques` avec des titres, légendes et axes correctement étiquetés. Les noms
+> des fichiers suivent le format `resultats_param1_valeur1_param2_valeur2.png`.
 
 ---
 
